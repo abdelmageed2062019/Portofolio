@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
@@ -8,7 +7,7 @@ export const Navbar = () => {
         
       <nav className="navbar navbar-expand-lg navbar-light bg-dark">
         <div className="container">
-      <a className="navbar-brand" href="#"><div className="logo">Abdelmageed Hamdi</div></a>
+      <a className="navbar-brand" href="#"><div className="logo"><h2 data-text="Abdelmageed Hamdi">Abdelmageed Hamdi</h2></div></a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <FontAwesomeIcon icon={faBars} style={{color:"#fff"}}/>
       </button>
@@ -19,15 +18,9 @@ export const Navbar = () => {
             <a className="nav-link" href="#">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">About me</a>
+            <a className="nav-link" href="#about">About me</a>
             </li>
-            <li className="nav-item">
-            <a className="nav-link" href="#">Services</a>
-          </li>
-
-          <li className="nav-item">
-            <a className="nav-link" href="#">How work</a>
-          </li>
+            
 
           <li className="nav-item">
             <a className="nav-link" href="#">Portofolio</a>
