@@ -1,13 +1,18 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Me from '../me.jpg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+    useEffect(() => {
+        AOS.init({duration: 1000});
+    }, [])
     return (
         
         <section id="about" className="section-padding about-section">
 
                 <div className="container">
-                    <div className="row">
+                    <div className="row" data-aos="fade-up">
                         <div className="col-sm-12 col-md-8">
                             <div className="section_title"><br/>
                             <div className="section_subtitle">About me</div>

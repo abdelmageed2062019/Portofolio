@@ -1,10 +1,15 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
-const skills = () => {
+const Skills = () => {
+    useEffect(() => {
+        AOS.init({duration: 1000});
+    }, [])
     return (
-        <div className="bg">
-        <div className="container">
+        <section id="skills" className="bg">
+        <div className="container" data-aos="fade-up">
             <h2 className="skills_title">What i use</h2>
             <div className="skills">
                 <ul>
@@ -21,8 +26,8 @@ const skills = () => {
                 </ul>
             </div>
         </div>
-        </div>
+        </section>
     )
 }
 
-export default skills
+export default Skills
