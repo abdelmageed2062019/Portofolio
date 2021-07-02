@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(148, 148, 148);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto Condensed", sans-serif;
 }
